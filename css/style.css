@@ -11,7 +11,7 @@ body {background:#edf2f5; font-family:'PT Sans', sans-serif; font-size:16px; col
 
 [class*="col-"] {border:0;}
 
-.header-top {background:#ce0b09;}
+.header-top {background:#fff; border-bottom: 5px solid #fee121; box-shadow: 0px -5px #ff1714 inset;}
 
 .header {background-color:#ffffff; padding:0;}
 
@@ -23,7 +23,7 @@ body {background:#edf2f5; font-family:'PT Sans', sans-serif; font-size:16px; col
 
 .info {display:inline-block; padding:0 14px; border-right:1px solid #ffffff; font-size:14px;}
 
-.info a {font-size:14px; color:#ffffff; line-height:18px;}
+.info a {font-size:14px; color:#000000; line-height:18px;}
 
 .info a img {display:inline-block; margin:0 7px 0 0;}
 
@@ -31,7 +31,7 @@ body {background:#edf2f5; font-family:'PT Sans', sans-serif; font-size:16px; col
 
 .info:last-child {border-right:0; padding:0 0 0 14px;}
 
-#ListCat, .menuwrap {border:0; width:100%; overflow:hidden; background:#fee121; min-height:60px;}
+#ListCat, .menuwrap {border:0; width:100%; overflow:hidden; background:#ffffff; min-height:60px;}
 
 #ListCat [class*="col-"], #CatPanel [class*="col-"], .menuwrap [class*="col-"] {padding-top:0; padding-bottom:0;}
 
