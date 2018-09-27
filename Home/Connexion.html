@@ -1,0 +1,49 @@
+﻿
+<script type='text/javascript' src='/js/headhtml.js'></script>
+<body>
+    <script type='text/javascript' src='/js/init.js'></script>
+    <script type='text/javascript' src='/js/header.js'></script>
+    <script type='text/javascript' src='/js/connexion.js'></script>
+
+    <div class="contaner">
+        <div class="wrapper">
+
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="hdr"><h2>Connexion </h2></div>
+
+                    <div id="Login">
+                        <table>
+                        <tbody>
+                            <tr>
+                                <td class="txt">Email :</td><td><input id="Ident" onblur="ValidateEmail" type="text"></td>
+                                <td id="IdentInfo"></td>
+                                <td></td>
+                            </tr>    
+                            <tr> 
+                                <td class="txt">Mot de passe :</td> <td><input id="Pass" type="password"></td>
+                            </tr>     
+                            <tr> 
+                                <td></td> 
+                            <td> <button type="button" onclick="getLogin()">Se connecter</button></td>
+                            </tr>
+                            <tr> 
+                                <td></td> 
+                                <td><div id="InfoMessage"></div>
+                                <div class="signuptxt"><a href="/Home/SignUp.html">Vous n'avez pas de compte, cliquez ici</a></div>
+                                <div class="signuptxt"><a href='/Home/RecoverPassword.html'>Mot de passe oublié?</a></div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script type='text/javascript' src='/js/bottom.js'></script>

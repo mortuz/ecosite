@@ -1,0 +1,76 @@
+﻿<script type='text/javascript' src='/js/headhtml.js'></script>
+<body>
+    <script type='text/javascript' src='/js/init.js'></script>
+    <script type='text/javascript' src='/js/headerpanel.js'></script>
+    <script type='text/javascript' src='/js/personnel.js'></script>
+    <div id='Personnel'>
+
+        <div class="contaner">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-12">
+
+                        <div class="hdr"><h2>Personnel </h2></div>
+
+                        <div id="Personnel" class="personal">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="txt">FirstName :</td>
+                                        <td>
+                                            <input id="FirstName" disabled="disabled" type="text">
+                                            <div class="ed-sv-btn"><a class="inbtn" onclick='getHiddenSave("FirstName",true)'>Edit</a> <a class="inbtn" id="aFirstName" onclick='getEditProperty(1,"FirstName")' hidden="">Save</a></div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="txt">LastName :</td>
+                                        <td>
+                                            <input id="LastName" disabled="disabled" type="text">
+                                            <div class="ed-sv-btn"><a class="inbtn" onclick='getHiddenSave("LastName",true)'>Edit</a> <a class="inbtn" id="aLastName" onclick='getEditProperty(2,"LastName")' hidden="">Save</a></div>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td class="txt">Adress :</td>
+                                        <td><input id="Adress" type="text"></td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td class="txt">Adress2 :</td>
+                                        <td><input id="Adress2" type="text"></td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td class="txt">Zip :</td>
+                                        <td><input id="Zip" type="text"></td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td class="txt">Town :</td>
+                                        <td><input id="Town" type="text"></td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td class="txt">Country :</td>
+                                        <td><input id="Country" type="text"></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script type='text/javascript' src='/js/bottompanel.js'></script>

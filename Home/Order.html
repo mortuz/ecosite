@@ -1,0 +1,44 @@
+﻿
+<script type='text/javascript' src='/js/headhtml.js'></script>
+<body>
+    <script type='text/javascript' src='/js/init.js'></script>
+    <script type='text/javascript' src='/js/header.js'></script>
+    <script type='text/javascript' src='/js/order.js'></script>
+
+
+    <div class="contaner">
+        <div class="wrapper">
+
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="hdr"><h2>Order </h2></div>
+
+                    <div class="radio-wrap">
+                        <input name="rdaddress" value="1" onchange="ChangeAddress1();" checked="checked" type="radio">
+                        Adresse identique du client actuel
+                    </div>
+                    <div class="radio-wrap">
+                        <input name="rdaddress" value="2" onchange="ChangeAddress2();" type="radio">
+                        Adresse différente du client actuel
+                    </div>
+                    <div id="AdressOrder1" style="visibility: hidden;">
+                        L'adresse de commande est la même que celle du client actuel
+                    </div>
+                    <div id="AdressOrder2" style="visibility: visible;"><table><tbody><tr><td>Adresse </td>
+                        <td><input id="Adress" type="text"></td></tr>    
+                        <tr> <td>Adresse 2</td> <td><input id="Adress2" type="text"></td></tr>     
+                        <tr> <td>Code postal</td> <td><input id="Zip" type="text"></td></tr>    
+                        <tr> <td>Ville</td> <td><input id="Town" type="text"></td></tr>    
+                        <tr> <td>Pays</td> <td><input id="Country" type="text"></td></tr>    
+                        <tr> <td></td> <td></td></tr></tbody></table> </div> 
+                    <input name="btOrder" value="Commander" onclick="getOrder()" type="submit">
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script type='text/javascript' src='/js/bottom.js'></script>
