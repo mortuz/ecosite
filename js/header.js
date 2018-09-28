@@ -10,7 +10,7 @@
             }
             else
             {
-                strTitle="<h1 class='title'><a href='/'><img src='/img/logo.png' alt=" + DataJson.Name +"></a></h1>";
+                strTitle="<h1 class='title'><a href='/'><img src='/img/logo.png' alt=" + DataJson.Name +" height='30' style='margin-top:10px; margin-bottom:10px'></a></h1>";
             }
             
             document.getElementById("Title").innerHTML = strTitle;
