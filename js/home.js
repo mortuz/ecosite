@@ -94,9 +94,9 @@ function getUrlCategory() {
     xhttp.send();
 }
 function putUrlService(urlService) {
-    document.getElementById("UrlIndex").innerHTML = "<a id='aplan' class='btn btn-full js--scroll-to-plans'\
-    href = '"+ urlService + "' > Voir produits</a >\
-        <a id='astart' class='btn btn-ghost js--scroll-to-start' href='"+ urlService + "'>Achat produits</a>";
+    if (document.getElementById("UrlIndex")) document.getElementById("UrlIndex").innerHTML = "<a id='aplan' class='btn btn-full js--scroll-to-plans'\
+    href = '" + urlService + "' > Voir produits</a >\
+        <a id='astart' class='btn btn-ghost js--scroll-to-start' href='" + urlService + "'>Achat produits</a>";
 }
 
 getUrlCategory();

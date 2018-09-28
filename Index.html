@@ -17,23 +17,21 @@
         <div class="owl-carousel video-carousel">
 
             <div class="item">
-                <video autoplay="autoplay" loop="" muted="muted">
+                <video autoplay loop="" muted="muted">
                     <source src="/video/vid.mp4" type="video/mp4">
                     <source src="/video/vid.webm" type="video/webm">
                 </video>
             </div>
 
             <div class="item">
-                <video autoplay="autoplay" loop="" muted="muted">
-                    <source src="/video/vid.mp4" type="video/mp4">
-                    <source src="/video/vid.webm" type="video/webm">
+                <video autoplay loop="" muted="muted">
+                    <source src="/video/video2.mp4" type="video/mp4">
                 </video>
             </div>
 
             <div class="item">
-                <video autoplay="autoplay" loop="" muted="muted">
-                    <source src="/video/vid.mp4" type="video/mp4">
-                    <source src="/video/vid.webm" type="video/webm">
+                <video autoplay loop="" muted="muted">
+                    <source src="/video/video.mp4" type="video/mp4">
                 </video>
             </div>
 
@@ -283,11 +281,30 @@
 </body>
     <script type='text/javascript' src='/js/bottom.js'></script>
     <script>
-    $('.video-carousel').owlCarousel({
-        autoplay: true,
-        loop: true,
-        items: 1,
-        animateOut: 'fadeOut',
-        animateIn: 'fadeIn',
-    });
+        var owl = $('.video-carousel');
+        owl.owlCarousel({
+            autoplay: true,
+            loop: true,
+            autoplayTimeout: 10000,
+            items: 1,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+            video: true,
+            onInitialized: function() {
+                $('.owl-item.active video').get(0).play();
+            }
+        });
+
+        owl.on('translate.owl.carousel', function (e) {
+            $('.owl-item video').each(function () {
+                $(this).get(0).pause();
+            });
+        });
+        owl.on('translated.owl.carousel', function (e) {
+            $('.owl-item.active video').get(0).play();
+        });
+
+        // $('.owl-item video').each(function () {
+        //     $(this).get(0).pause();
+        // });
     </script>
