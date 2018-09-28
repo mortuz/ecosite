@@ -260,7 +260,7 @@ margin-right: -50%;transform: translate(-50%, -50%); cursor:pointer;}
   transform: scale(1);
 }
 
-.service-wrap {overflow:hidden; margin:34px 0 50px; padding:105px 5px 25px; text-align: center}	
+.service-wrap {overflow:hidden; margin:34px 0 50px;  text-align: center}	
 
 .service-box {display:inline-block; background:#ffffff; width:360px; min-height:745px; margin:0 5px; -webkit-box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.2); box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.2);}
 
