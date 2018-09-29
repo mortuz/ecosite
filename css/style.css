@@ -116,7 +116,7 @@ body {background:#edf2f5; font-family:'PT Sans', sans-serif; font-size:16px; col
 
 #CatPanel {background:#ffffff; border-bottom:1px solid #dcdcdc; min-height:65px;}
 
-.contaner {margin-top:20px; margin-bottom:20px; position:relative; min-height:200px;}
+/* .contaner {margin-top:20px; margin-bottom:20px; position:relative; min-height:200px;} */
 
 .selectboxwrap {display:inline-block; background:#ffffff; border:1px solid #dcdcdc; padding:16px 28px; margin:0 0 40px; border-radius:10px; -o-border-radius:10px; -ms-border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px;}
 
